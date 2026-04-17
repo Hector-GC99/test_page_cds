@@ -14,11 +14,14 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="assets/logo_horizontal.png" alt="Codeus Logo" class="logo-img">
+                <a href="#inicio">
+                    <img src="assets/logo_horizontal.png" alt="Codeus Logo" class="logo-img">
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#problemas">Problemas</a></li>
+                <li><a href="#beneficios">Soluciones</a></li>
                 <li><a href="#planes">Planes</a></li>
                 <li><a href="#faqs">Preguntas</a></li>
             </ul>
@@ -30,7 +33,7 @@
             <div class="hero-content">
                 <span class="tagline">Impulsado por Inteligencia Artificial</span>
                 <h1>Un Agente de Venta IA que <span>vende por ti.</span></h1>
-                <p>Impulsa tu crecimiento con automatización inteligente, agenda citas, califica prospectos y cierra ventas desde tus canales de comunicacion</p>
+                <p>Impulsa tu crecimiento con automatización inteligente, agenda citas, califica prospectos y cierra ventas desde tus canales de comunicación.</p>
                 <a href="#planes" class="btn-primary">Ver Planes</a>
             </div>
         </div>
@@ -41,24 +44,68 @@
             <div class="problem-box">
                 <div class="problem-text">
                     <h2>¿Cuántas ventas pierdes porque <span>nadie responde</span> a tiempo?</h2>
+                    <p class="highlight-text">El 70% de los clientes compra al primero que responde.</p>
+                    <div class="problem-cards">
+                        <div class="p-card"><span>✕</span> Ventas frías por falta de seguimiento.</div>
+                        <div class="p-card"><span>✕</span> Equipo saturado con dudas repetitivas.</div>
+                        <div class="p-card"><span>✕</span> Clientes que nunca reciben respuesta.</div>
+                    </div>
                 </div>
-                <ul class="problem-list">
-                    <li>Clientes que escriben y nunca reciben respuesta.</li>
-                    <li>Ventas que se enfrían por falta de seguimiento.</li>
-                    <li>Equipo saturado con preguntas repetitivas.</li>
-                </ul>
+                <div class="problem-art">
+                    <div class="art-wrapper">
+                        <img src="assets/problemas-ia.png" alt="Problemas de ventas" class="art-img">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="planes" class="section-padding">
-        <div class="container text-center">
-            <h2 class="title-l">Nuestros Planes</h2>
+    <section id="beneficios" class="section-padding">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Nuestras solucionnes <span>que impulsarán tu negocio</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Atención 24/7</h3>
+                    <p>Respuestas inmediatas sin importar la hora.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📅</div>
+                    <h3>Agenda IA</h3>
+                    <p>Citas programadas directo en tu calendario.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Filtro Real</h3>
+                    <p>Entrega solo leads que están listos para comprar.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Cierre Pro</h3>
+                    <p>Flujos persuasivos para aumentar tu conversión.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔗</div>
+                    <h3>Conexión CRM</h3>
+                    <p>Sincroniza con Notion, HubSpot u Odoo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Escalabilidad</h3>
+                    <p>Atiende a miles de clientes sin aumentar costos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 50px;">Nuestros Planes</h2>
             <div class="pricing-grid">
                 <div class="price-card">
                     <h3>Agente IA Básico</h3>
                     <ul class="price-features">
-                        <li>Respuestas automáticas a FAQs</li>
+                        <li>Respuestas automáticas</li>
                         <li>Agenda de citas</li>
                         <li>Mensajes de bienvenida</li>
                     </ul>
@@ -68,18 +115,18 @@
                     <div class="popular-tag">Más Popular</div>
                     <h3>Agente IA Avanzado</h3>
                     <ul class="price-features">
-                        <li>Todo lo del Básico</li>
                         <li>Calificación de prospectos</li>
-                        <li>Integración con Google Sheets</li>
+                        <li>Integración Google Sheets</li>
+                        <li>Todo lo del Básico</li>
                     </ul>
                     <a href="#" class="btn-primary">Quiero este</a>
                 </div>
                 <div class="price-card">
                     <h3>Agente IA Pro</h3>
                     <ul class="price-features">
-                        <li>Todo lo del Avanzado</li>
                         <li>Entrenamiento personalizado</li>
-                        <li>Integración con CRM</li>
+                        <li>Integración total CRM</li>
+                        <li>Todo lo del Avanzado</li>
                     </ul>
                     <a href="#" class="btn-outline">Quiero este</a>
                 </div>
@@ -87,9 +134,9 @@
         </div>
     </section>
 
-    <section id="faqs" class="section-padding bg-darker">
+    <section id="faqs" class="section-padding">
         <div class="container max-800">
-            <h2 class="title-l text-center">Preguntas Frecuentes</h2>
+            <h2 class="text-center" style="margin-bottom: 40px;">Preguntas Frecuentes</h2>
             <div class="accordion">
                 <details>
                     <summary>¿Necesito tener mi propio número de WhatsApp?</summary>
@@ -103,12 +150,48 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center">
-            <h2>Tus clientes ya están en WhatsApp. ¿Por qué seguir perdiendo ventas?</h2>
-            <h3> Contactanos a proyectos@codeus.com.mx</h3>
-            <br>
-            <p>&copy; 2026 Codeus</p>
+    <footer class="footer-custom">
+        <div class="container footer-grid">
+            
+            <div class="footer-col">
+                <h3 class="footer-title">Tus clientes ya están en WhatsApp. ¿Por qué seguir perdiendo ventas?</h3>
+                <p class="footer-email">proyectos@codeus.com.mx</p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Redes Sociales</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="social-link"><span class="icon">f</span> Facebook</a></li>
+                    <li><a href="#" class="social-link"><span class="icon">i</span> Instagram</a></li>
+                    <li><a href="#" class="social-link"><span class="icon">in</span> LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Legal</h3>
+                <ul class="footer-list">
+                    <li><a href="politica-privacidad.html">Privacidad de datos</a></li>
+                    <li><a href="terminos-condiciones.html">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Enlaces</h3>
+                <ul class="footer-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#problemas">Problemas</a></li>
+                <li><a href="#beneficios">Soluciones</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#faqs">Preguntas</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Codeus Solutions</p>
+            </div>
         </div>
     </footer>
 
