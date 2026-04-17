@@ -1,0 +1,394 @@
+/* ============================================================
+   ESTILOS GLOBALES Y VARIABLES (ESTILO CODEUS)
+   ============================================================ */
+:root {
+    --bg-dark: #0a0a0a;       /* Fondo principal */
+    --bg-sec: #111111;        /* Fondo de secciones/tarjetas */
+    --primary: #00d2ff;       /* Cian Neón */
+    --secondary: #9d50bb;     /* Púrpura Neón */
+    --text-white: #ffffff;    /* Texto principal */
+    --text-muted: #a0a0a0;    /* Texto secundario */
+    --grad: linear-gradient(135deg, var(--primary), var(--secondary));
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-center { text-align: center; }
+.section-padding { padding: 100px 0; }
+
+/* Títulos con gradiente */
+h1 span, h2 span, .highlight {
+    background: var(--grad);
+    -webkit-background-clip: text; /* Para Chrome, Safari y Edge */
+    background-clip: text;         /* Propiedad estándar para compatibilidad futura */
+    -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+   HEADER Y LOGO 
+   ============================================================ */
+header {
+    padding: 0; /* Quitamos el padding para controlar la altura desde el nav */
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    /* Eliminamos overflow: hidden para que el brillo (glow) del logo se vea bien */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura cómoda para un logo horizontal con subtítulo */
+
+}
+
+.logo {
+    background: none;   /* quita fondo */
+    padding: 0;         /* elimina espacio interno */
+    box-shadow: none;   /* quita brillo/sombra si hay */
+    border: none;  
+}
+
+.logo-img {
+     height: 75px;   /* prueba entre 55px - 70px */
+    width: auto;
+    display: block;
+}
+
+.logo-img:hover {
+    transform: scale(1.02); /* Pequeña interacción al pasar el mouse */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+
+    background: radial-gradient(circle at 80% 20%, rgba(157, 80, 187, 0.1), transparent 40%);
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa todo el alto */
+
+    background: url('../assets/hero-art.png') no-repeat center right; /* Alineado a la derecha */
+    background-size: cover; /* 'cover' hace que cubra toda la sección, 'contain' si prefieres no recortar nada */
+
+    opacity: 0.2; /* Ajusta la visibilidad a tu gusto */
+    filter: drop-shadow(0 0 80px rgba(0, 210, 255, 0.3));
+
+    z-index: 0;
+    pointer-events: none; /* Para que no interfiera con los clics en los botones */
+    transform: none;      /* Quitamos el transform fijo que tenías para centrarlo mejor */
+}
+
+/* Ajuste de la animación para que no se desplace fuera de los bordes */
+@keyframes floatBg {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); } /* Un ligero pulso en lugar de movimiento lateral */
+}
+
+.hero::before {
+    animation: floatBg 10s ease-in-out infinite;
+}
+
+
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+}
+.tagline {
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* FIX: Limitación de la imagen para que no tape el contenido */
+.main-art {
+    width: 100%;
+    max-width: 520px; /* Tamaño controlado */
+    margin: 0 auto;
+    filter: drop-shadow(0 0 40px rgba(0, 210, 255, 0.2));
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ============================================================
+   SECCIÓN: PROBLEMAS
+   ============================================================ */
+.bg-darker { background-color: #050505; }
+
+.problem-box {
+    background: #151515;
+    padding: 60px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    border: 1px solid #252525;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+
+.problem-text h2 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+.problem-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.problem-list li {
+    margin-bottom: 18px;
+    padding-left: 30px;
+    position: relative;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.problem-list li::before {
+    content: "✕";
+    color: var(--secondary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ============================================================
+   SECCIÓN: PLANES Y TARJETAS
+   ============================================================ */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.price-card {
+    background: var(--bg-sec);
+    padding: 45px;
+    border-radius: 24px;
+    border: 1px solid #222;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.price-card.featured {
+    border: 2px solid var(--primary);
+    transform: scale(1.05);
+    background: #161616;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--grad);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.price-features {
+    list-style: none;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.price-features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ============================================================
+   BOTONES Y ACCIONES
+   ============================================================ */
+.btn-primary {
+    display: inline-block;
+    padding: 16px 35px;
+    background: var(--grad);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(157, 80, 187, 0.4);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: rgba(0, 210, 255, 0.1);
+}
+
+/* ============================================================
+   FAQS (ACORDEÓN)
+   ============================================================ */
+.accordion {
+    margin-top: 40px;
+    text-align: left;
+}
+
+details {
+    background: #1a1a1a;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+details[open] {
+    border-color: var(--primary);
+}
+
+summary {
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::after {
+    content: "+";
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details p {
+    margin-top: 15px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    padding: 80px 0 40px;
+    border-top: 1px solid #222;
+}
+
+/* ============================================================
+   ANIMACIONES Y RESPONSIVE
+   ============================================================ */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 992px) {
+    .hero-grid, .problem-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-content h1 { font-size: 2.8rem; }
+    .hero-content p { margin: 0 auto 40px auto; }
+    .nav-links { display: none; } /* Ocultar en móvil para menú hamburguesa futuro */
+}
+
+@media (max-width: 600px) {
+    .section-padding { padding: 60px 0; }
+    .hero-content h1 { font-size: 2.2rem; }
+    .problem-box { padding: 30px; }
+}
