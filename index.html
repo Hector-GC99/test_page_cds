@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbots IA para WhatsApp | Codeus Solutions</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Agentes IA para tu operación | Codeus Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- ===================== HEADER ===================== -->
     <header>
         <nav class="container">
             <div class="logo">
@@ -20,144 +20,444 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#problemas">Problemas</a></li>
-                <li><a href="#beneficios">Soluciones</a></li>
-                <li><a href="#planes">Planes</a></li>
+                <li><a href="#problemas">Problemática</a></li>
+                <li><a href="#soluciones">Soluciones</a></li>
+                <li><a href="#como-funciona">Cómo funciona</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#sectores">Sectores</a></li>
                 <li><a href="#faqs">Preguntas</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#problemas">Problemática</a></li>
+                <li><a href="#soluciones">Soluciones</a></li>
+                <li><a href="#como-funciona">Cómo funciona</a></li>
+                <li><a href="#paquetes">Paquetes</a></li>
+                <li><a href="#sectores">Sectores</a></li>
+                <li><a href="#faqs">Preguntas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
+    <!-- ===================== HERO ===================== -->
     <section id="inicio" class="hero">
-        <div class="container hero-grid">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-inner">
             <div class="hero-content">
-                <span class="tagline">Impulsado por Inteligencia Artificial</span>
-                <h1>Un Agente de Venta IA que <span>vende por ti.</span></h1>
-                <p>Impulsa tu crecimiento con automatización inteligente, agenda citas, califica prospectos y cierra ventas desde tus canales de comunicación.</p>
-                <a href="#planes" class="btn-primary">Ver Planes</a>
+                <span class="tagline">Agentes de Inteligencia Artificial</span>
+                <h1><span>Codeus </span>hace que tu negocio responda mejor, <span>más rápido y con más control.</span></h1>
+                <p>Codeus ayuda a empresas, organizaciones y dependencias a automatizar su operación de respuesta en ventas, postventa, soporte y atención al cliente, usando agentes de inteligencia artificial para responder, clasificar y canalizar mejor cada conversación.</p>
+                <div class="hero-ctas">
+                    <a href="#paquetes" class="btn-primary">Ver Paquetes</a>
+                    <a href="#como-funciona" class="btn-ghost">Cómo funciona →</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-dashboard">
+                    <div class="dash-header">
+                        <span class="dash-dot red"></span>
+                        <span class="dash-dot yellow"></span>
+                        <span class="dash-dot green"></span>
+                        <span class="dash-title">Panel de Operación · Codeus SORN</span>
+                    </div>
+                    <div class="dash-body">
+                        <div class="dash-channel">
+                            <span class="ch-icon wa">W</span>
+                            <div class="ch-info"><div class="ch-name">WhatsApp</div><div class="ch-msg">Clasificando solicitud entrante...</div></div>
+                            <span class="ch-badge primary">Ventas</span>
+                        </div>
+                        <div class="dash-channel">
+                            <span class="ch-icon ig">IG</span>
+                            <div class="ch-info"><div class="ch-name">Instagram</div><div class="ch-msg">Respondiendo pregunta frecuente</div></div>
+                            <span class="ch-badge secondary">Soporte</span>
+                        </div>
+                        <div class="dash-channel">
+                            <span class="ch-icon fb">FB</span>
+                            <div class="ch-info"><div class="ch-name">Facebook</div><div class="ch-msg">Canalizando a área correcta...</div></div>
+                            <span class="ch-badge tertiary">Postventa</span>
+                        </div>
+                        <div class="dash-stats">
+                            <div class="stat-item"><div class="stat-num">98%</div><div class="stat-lbl">Respuesta inmediata</div></div>
+                            <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-lbl">Operación continua</div></div>
+                            <div class="stat-item"><div class="stat-num">4x</div><div class="stat-lbl">Canales activos</div></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== PROBLEMÁTICA ===================== -->
     <section id="problemas" class="section-padding bg-darker">
         <div class="container">
-            <div class="problem-box">
-                <div class="problem-text">
-                    <h2>¿Cuántas ventas pierdes porque <span>nadie responde</span> a tiempo?</h2>
-                    <p class="highlight-text">El 70% de los clientes compra al primero que responde.</p>
-                    <div class="problem-cards">
-                        <div class="p-card"><span>✕</span> Ventas frías por falta de seguimiento.</div>
-                        <div class="p-card"><span>✕</span> Equipo saturado con dudas repetitivas.</div>
-                        <div class="p-card"><span>✕</span> Clientes que nunca reciben respuesta.</div>
-                    </div>
+            <div class="section-label">Problemática</div>
+            <h2 class="section-title">Muchas organizaciones no pierden oportunidades por falta de demanda,<br><span>sino por mala respuesta y mala canalización.</span></h2>
+            <p class="section-sub">Cuando las conversaciones llegan por varios canales y nadie las filtra ni las dirige bien, se enfrían prospectos, se satura el equipo y se pierde tiempo en tareas repetitivas.</p>
+            <div class="problems-grid">
+                <div class="prob-card">
+                    <div class="prob-icon">⏱</div>
+                    <p>Prospectos sin respuesta inmediata</p>
                 </div>
-                <div class="problem-art">
-                    <div class="art-wrapper">
-                        <img src="assets/problemas-ia.png" alt="Problemas de ventas" class="art-img">
-                    </div>
+                <div class="prob-card">
+                    <div class="prob-icon">📡</div>
+                    <p>Conversaciones perdidas entre varios canales</p>
+                </div>
+                <div class="prob-card">
+                    <div class="prob-icon">🔀</div>
+                    <p>Soporte, ventas y atención mezclados sin orden</p>
+                </div>
+                <div class="prob-card">
+                    <div class="prob-icon">🔁</div>
+                    <p>Equipo ocupado contestando lo mismo una y otra vez</p>
+                </div>
+                <div class="prob-card">
+                    <div class="prob-icon">🚫</div>
+                    <p>Falta de filtro para saber qué sí requiere atención humana</p>
+                </div>
+                <div class="prob-card">
+                    <div class="prob-icon">↩️</div>
+                    <p>Rebotes internos entre áreas o personas</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="beneficios" class="section-padding">
+    <!-- ===================== SOLUCIONES ===================== -->
+    <section id="soluciones" class="section-padding">
         <div class="container">
-            <h2 class="text-center" style="margin-bottom: 50px;">Nuestras solucionnes <span>que impulsarán tu negocio</span></h2>
+            <div class="section-label">Soluciones</div>
+            <h2 class="section-title">Capacidades que <span>ordenan tu operación de respuesta</span></h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Atención 24/7</h3>
-                    <p>Respuestas inmediatas sin importar la hora.</p>
+                    <div class="benefit-icon">🌐</div>
+                    <h3>Atención omnicanal 24/7</h3>
+                    <p>Respuesta continua en todos los canales sin importar la hora ni el volumen.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">📅</div>
-                    <h3>Agenda IA</h3>
-                    <p>Citas programadas directo en tu calendario.</p>
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Respuesta inmediata al primer contacto</h3>
+                    <p>Atención desde el primer mensaje para que ninguna solicitud quede sin respuesta.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🗂</div>
+                    <h3>Clasificación de conversaciones</h3>
+                    <p>Identifica automáticamente el tipo de solicitud: venta, soporte, postventa o atención general.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Captura de datos clave</h3>
+                    <p>Recopila información esencial antes de pasar la conversación a un humano.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🎯</div>
-                    <h3>Filtro Real</h3>
-                    <p>Entrega solo leads que están listos para comprar.</p>
+                    <h3>Canalización al área correcta</h3>
+                    <p>Dirige cada conversación al responsable o área que corresponde según el tipo de solicitud.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Cierre Pro</h3>
-                    <p>Flujos persuasivos para aumentar tu conversión.</p>
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Automatización de preguntas repetitivas</h3>
+                    <p>Libera al equipo de tareas de primer filtro respondiendo lo que siempre se repite.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🔗</div>
-                    <h3>Conexión CRM</h3>
-                    <p>Sincroniza con Notion, HubSpot u Odoo.</p>
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Escalamiento a humano cuando se necesita</h3>
+                    <p>Transfiere la conversación a una persona cuando la situación lo requiere, con contexto completo.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
-                    <h3>Escalabilidad</h3>
-                    <p>Atiende a miles de clientes sin aumentar costos.</p>
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Agentes multidioma con manejo de objeciones</h3>
+                    <p>Detecta el idioma del contacto y responde con fluidez, manejando objeciones frecuentes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="planes" class="section-padding bg-darker">
+    <!-- ===================== CÓMO FUNCIONA ===================== -->
+    <section id="como-funciona" class="section-padding bg-darker">
         <div class="container">
-            <h2 class="text-center" style="margin-bottom: 50px;">Nuestros Planes</h2>
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Agente IA Básico</h3>
-                    <ul class="price-features">
-                        <li>Respuestas automáticas</li>
-                        <li>Agenda de citas</li>
-                        <li>Mensajes de bienvenida</li>
-                    </ul>
-                    <a href="#" class="btn-outline">Quiero este</a>
+            <div class="section-label">Cómo funciona</div>
+            <h2 class="section-title">Un proceso claro en <span>tres etapas</span></h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Entendemos el negocio, sus canales, sus procesos de respuesta y sus necesidades principales.</p>
                 </div>
+                <div class="step-connector">→</div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Configuración</h3>
+                    <p>Estructuramos la lógica de atención y configuramos la solución con base en la información levantada.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Implementación y arranque</h3>
+                    <p>Ponemos la solución en operación, capacitamos al cliente y acompañamos el arranque inicial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PAQUETES ===================== -->
+    <section id="paquetes" class="section-padding">
+        <div class="container">
+            <div class="section-label">Paquetes</div>
+            <h2 class="section-title">Elige la escala que <span>tu organización necesita</span></h2>
+            <div class="pricing-grid">
+
+                <!-- Paquete 1 -->
+                <div class="price-card">
+                    <div class="price-tag-label">Paquete 1</div>
+                    <h3>Respuestas inmediatas</h3>
+                    <p class="price-desc">Para organizaciones que necesitan resolver rápido la primera capa de atención y empezar a operar con una estructura básica pero funcional.</p>
+                    <ul class="price-features">
+                        <li>Hasta 2 áreas de atención</li>
+                        <li>Hasta 2 sucursales</li>
+                        <li>Hasta 4 agentes de IA</li>
+                        <li>Hasta 4 canales</li>
+                        <li>Configuración de administración y facturación</li>
+                        <li>Mapeo y creación de base de datos</li>
+                        <li>Ciclo de vida de prospecto o clientes</li>
+                        <li>Hasta 5 plantillas para contestación humana</li>
+                        <li>Capacitación inicial y arranque</li>
+                        <li>10 perfiles humanos con configuración de equipo</li>
+                    </ul>
+                    <div class="price-rec">
+                        <strong>Recomendado para:</strong> negocios pequeños, empresas en etapa inicial, equipos reducidos.
+                    </div>
+                    <div class="price-amount"><span class="desde">Desde</span> $14,999 <span class="iva">MXN + IVA</span></div>
+                    <a href="#contacto" class="btn-outline">Quiero este paquete</a>
+                </div>
+
+                <!-- Paquete 2 — Featured -->
                 <div class="price-card featured">
                     <div class="popular-tag">Más Popular</div>
-                    <h3>Agente IA Avanzado</h3>
+                    <div class="price-tag-label">Paquete 2</div>
+                    <h3>Seguimiento de negocio</h3>
+                    <p class="price-desc">Para organizaciones que necesitan dar seguimiento con más estructura, clasificar mejor sus conversaciones y distribuir la atención entre varias áreas.</p>
                     <ul class="price-features">
-                        <li>Calificación de prospectos</li>
-                        <li>Integración Google Sheets</li>
-                        <li>Todo lo del Básico</li>
+                        <li>Las 4 áreas de atención completas</li>
+                        <li>Hasta 4 sucursales</li>
+                        <li>Hasta 16 agentes de IA</li>
+                        <li>Hasta 10 canales</li>
+                        <li>Configuración de administración y facturación</li>
+                        <li>Mapeo y creación de base de datos</li>
+                        <li>Ciclo de vida personalizado de prospectos</li>
+                        <li>Hasta 15 plantillas para contestación humana</li>
+                        <li>Capacitación inicial y arranque</li>
+                        <li>10 perfiles humanos con configuración de equipo</li>
                     </ul>
-                    <a href="#" class="btn-primary">Quiero este</a>
+                    <div class="price-rec">
+                        <strong>Recomendado para:</strong> pymes, empresas medianas, organizaciones con varias áreas o canales activos.
+                    </div>
+                    <div class="price-amount"><span class="desde">Desde</span> $34,999 <span class="iva">MXN + IVA</span></div>
+                    <a href="#contacto" class="btn-primary">Quiero este paquete</a>
                 </div>
+
+                <!-- Paquete 3 -->
                 <div class="price-card">
-                    <h3>Agente IA Pro</h3>
+                    <div class="price-tag-label">Paquete 3</div>
+                    <h3>Operación integral</h3>
+                    <p class="price-desc">Para organizaciones que necesitan una operación más amplia, con más volumen, más áreas, más sucursales y una lógica de atención más robusta.</p>
                     <ul class="price-features">
-                        <li>Entrenamiento personalizado</li>
-                        <li>Integración total CRM</li>
-                        <li>Todo lo del Avanzado</li>
+                        <li>Las 4 áreas de atención completas</li>
+                        <li>Hasta 16 sucursales</li>
+                        <li>Hasta 64 agentes de IA</li>
+                        <li>Hasta 15 canales</li>
+                        <li>Configuración de administración y facturación</li>
+                        <li>Mapeo y creación de base de datos</li>
+                        <li>Ciclo de vida personalizado de prospectos</li>
+                        <li>Hasta 25 plantillas para contestación humana</li>
+                        <li>Capacitación inicial y arranque</li>
+                        <li>10 perfiles humanos con configuración de equipo</li>
                     </ul>
-                    <a href="#" class="btn-outline">Quiero este</a>
+                    <div class="price-rec">
+                        <strong>Recomendado para:</strong> empresas medianas con operación amplia, grupos empresariales, instituciones con alto volumen.
+                    </div>
+                    <div class="price-amount"><span class="desde">Desde</span> $59,999 <span class="iva">MXN + IVA</span></div>
+                    <a href="#contacto" class="btn-outline">Quiero este paquete</a>
+                </div>
+
+                <!-- Paquete 4 -->
+                <div class="price-card price-card-full">
+                    <div class="price-tag-label">Paquete 4</div>
+                    <h3>Operación total</h3>
+                    <p class="price-desc">Para organizaciones que requieren una solución de respuesta con mayor amplitud, personalización y escalabilidad cuando la operación supera un modelo estándar.</p>
+                    <ul class="price-features price-features-inline">
+                        <li>Áreas de atención ilimitadas</li>
+                        <li>Sucursales ilimitadas</li>
+                        <li>Agentes de IA ilimitados</li>
+                        <li>Canales ilimitados</li>
+                        <li>Plantillas ilimitadas para contestación humana</li>
+                        <li>Configuración personalizada a medida</li>
+                        <li>Mapeo y creación de base de datos</li>
+                        <li>Ciclo de vida personalizado</li>
+                        <li>Capacitación inicial y arranque</li>
+                        <li>10 perfiles humanos con configuración de equipo</li>
+                    </ul>
+                    <div class="price-rec">
+                        <strong>Recomendado para:</strong> empresas grandes, corporativos, grupos empresariales complejos, dependencias o proyectos especiales.
+                    </div>
+                    <div class="price-amount price-cotizar"><span class="desde">Desde</span> Por cotizar <span class="iva">+ IVA</span></div>
+                    <a href="#contacto" class="btn-primary">Solicitar cotización</a>
+                </div>
+
+            </div>
+
+            <!-- Servicios especializados -->
+            <div class="services-extra">
+                <h3>También contamos con servicios especializados</h3>
+                <div class="services-grid">
+                    <div class="svc-item">Integraciones con CRM, ERP o sistemas internos</div>
+                    <div class="svc-item">Consultoría especializada por industria o proceso</div>
+                    <div class="svc-item">Capacitación adicional para equipos</div>
+                    <div class="svc-item">Inteligencia de negocios y reportería</div>
+                    <div class="svc-item">Ajustes o personalizaciones fuera de alcance</div>
+                    <div class="svc-item">Soporte continuo y optimización posterior al arranque</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===================== SECTORES ===================== -->
+    <section id="sectores" class="section-padding bg-darker">
+        <div class="container">
+            <div class="section-label">Sectores</div>
+            <h2 class="section-title">Soluciones para <span>cada industria</span></h2>
+            <div class="sectors-layout">
+                <div class="sectors-nav" id="sectorsNav">
+                    <button class="sector-btn active" data-sector="0">🚗 Agencias automotrices</button>
+                    <button class="sector-btn" data-sector="1">🏠 Inmobiliarias</button>
+                    <button class="sector-btn" data-sector="2">🎓 Educación privada</button>
+                    <button class="sector-btn" data-sector="3">🏥 Salud privada</button>
+                    <button class="sector-btn" data-sector="4">🛡 Seguros</button>
+                    <button class="sector-btn" data-sector="5">💳 Servicios financieros</button>
+                    <button class="sector-btn" data-sector="6">📦 Comercializadoras</button>
+                </div>
+                <div class="sectors-content" id="sectorsContent">
+                    <div class="sector-panel active">
+                        <h4>Agencias automotrices</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Prospectos que preguntan por varios canales, vendedores que responden distinto y oportunidades que se enfrían por tardanza.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Responde rápido, filtra la intención inicial y dirige cada conversación al área o asesor correcto.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Menos fuga de prospectos y menos tiempo perdido en preguntas repetitivas.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Inmobiliarias</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Prospectos que piden información, cotizan y desaparecen porque nadie les dio seguimiento a tiempo.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Atiende de inmediato, recopila datos desde el primer contacto y deja al asesor conversaciones mejor filtradas.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Más velocidad de respuesta y mejor aprovechamiento del tiempo comercial.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Educación privada</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Interesados que preguntan lo mismo, procesos de admisión saturados y demasiada carga administrativa en atención.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Resuelve dudas frecuentes, clasifica solicitudes y canaliza mejor a admisiones o atención.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Menos carga repetitiva y atención más rápida a aspirantes y familias.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Salud privada</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Saturación en recepción, preguntas repetitivas y dificultad para orientar bien desde el primer contacto.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Atiende dudas básicas, clasifica solicitudes y dirige cada caso al área o tipo de atención correcta.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Menor saturación del personal y mejor orientación inicial al paciente.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Seguros</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Prospectos y clientes que requieren seguimiento constante, dudas repetitivas y procesos dispersos.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Filtra conversaciones, responde lo básico y deja al equipo humano los casos que sí requieren intervención.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Mejor uso del tiempo del equipo y atención más consistente.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Servicios financieros</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Alto volumen de consultas, validación constante de información y oportunidades que se pierden por lentitud.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Clasifica solicitudes, recopila datos clave y canaliza al responsable correcto desde el inicio.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Menos rebotes y respuestas más rápidas en procesos sensibles.</p>
+                    </div>
+                    <div class="sector-panel">
+                        <h4>Comercializadoras y distribuidores</h4>
+                        <p class="sector-prob"><strong>Problema principal:</strong> Muchas solicitudes entrando al mismo tiempo, respuestas inconsistentes y desorden entre ventas, atención y soporte.</p>
+                        <p class="sector-sol"><strong>Cómo ayuda Codeus:</strong> Centraliza canales, responde de inmediato y organiza mejor qué conversación va con qué área.</p>
+                        <p class="sector-val"><strong>Valor que se ve más rápido:</strong> Más control del volumen y menos desgaste del equipo en tareas repetitivas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQS ===================== -->
     <section id="faqs" class="section-padding">
         <div class="container max-800">
-            <h2 class="text-center" style="margin-bottom: 40px;">Preguntas Frecuentes</h2>
+            <div class="section-label text-center">Preguntas frecuentes</div>
+            <h2 class="section-title text-center" style="margin-bottom: 50px;">Lo que más nos <span>preguntan</span></h2>
             <div class="accordion">
                 <details>
-                    <summary>¿Necesito tener mi propio número de WhatsApp?</summary>
-                    <p>Sí, utilizamos tu número actual mediante la API Oficial de WhatsApp Business.</p>
+                    <summary>¿Para qué tipo de organización está pensado Codeus SORN?</summary>
+                    <p>Codeus SORN puede implementarse en negocios pequeños, empresas medianas, empresas grandes, grupos empresariales y también en dependencias u organizaciones que necesitan responder, clasificar y canalizar conversaciones desde distintos canales.</p>
                 </details>
                 <details>
-                    <summary>¿El chatbot puede hablar en varios idiomas?</summary>
-                    <p>¡Claro! La IA detecta automáticamente el idioma del cliente y responde en consecuencia.</p>
+                    <summary>¿Codeus SORN reemplaza a mi equipo actual?</summary>
+                    <p>Codeus SORN ayuda a automatizar la primera capa de atención, resolver tareas repetitivas, recopilar información inicial y filtrar mejor las conversaciones. En algunos casos complementa al equipo actual y en otros permite operar con una estructura más ligera, dejando al humano lo que sí requiere criterio, seguimiento o cierre.</p>
+                </details>
+                <details>
+                    <summary>¿Codeus SORN aplica solo para ventas?</summary>
+                    <p>No. Codeus SORN está pensado para ventas, postventa, soporte y atención al cliente. La solución puede estructurarse según el tipo de conversación que hoy recibe tu organización.</p>
+                </details>
+                <details>
+                    <summary>¿Con qué canales puede trabajar Codeus SORN?</summary>
+                    <p>Codeus SORN puede operar con canales como WhatsApp, Instagram, Facebook, correo electrónico, Telegram y TikTok Business, entre otros, según el alcance del proyecto y la configuración disponible para tu operación.</p>
+                </details>
+                <details>
+                    <summary>¿Qué necesito para iniciar?</summary>
+                    <p>Lo ideal es contar con: canales activos de atención, información básica del negocio, materiales o respuestas frecuentes, fichas, procesos o información que ayude a entrenar la solución, y una persona responsable para validar mensajes, flujos y decisiones durante la implementación.</p>
+                </details>
+                <details>
+                    <summary>¿Se puede adaptar a mi giro o a un proceso específico?</summary>
+                    <p>Sí. Codeus SORN puede adaptarse según la industria, el tipo de atención, el flujo comercial o el proceso que se quiera resolver, ya sea ventas, soporte, postventa o atención general.</p>
+                </details>
+                <details>
+                    <summary>¿Cuánto tarda la implementación?</summary>
+                    <p>Depende del paquete, del nivel de complejidad, de los canales involucrados y de qué tan clara y disponible esté la información necesaria durante el levantamiento. En la mayoría de los casos puede tomar de 1 a 4 semanas, excepto el paquete 4, Operación Total.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo conectar Codeus SORN con otros sistemas?</summary>
+                    <p>Sí, pero las integraciones con CRM, ERP, sistemas internos o herramientas de terceros se consideran parte de los servicios especializados y se revisan según el alcance del proyecto.</p>
+                </details>
+                <details>
+                    <summary>¿Existen otros pagos a considerar aparte del paquete?</summary>
+                    <p>Sí. El pago del paquete considera la implementación, configuración, arranque y estructuración de la solución. Para sostener el sistema mensualmente, se requiere además una suscripción mensual mediante una plataforma externa.</p>
+                </details>
+                <details>
+                    <summary>¿Qué pasa después del arranque?</summary>
+                    <p>Después del arranque puede haber acompañamiento, soporte según el paquete y servicios adicionales de optimización, ajustes o evolución de la solución, según las necesidades de la organización. Estos servicios se consideran adicionales a los paquetes.</p>
+                </details>
+                <details>
+                    <summary>¿Codeus SORN genera prospectos?</summary>
+                    <p>No. El enfoque principal es responder, clasificar, recopilar información, canalizar y automatizar parte de la atención. La generación de prospectos o la pauta no forman parte del alcance base.</p>
                 </details>
             </div>
         </div>
     </section>
 
-    <footer class="footer-custom">
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="contacto" class="footer-custom">
         <div class="container footer-grid">
-            
-            <div class="footer-col">
-                <h3 class="footer-title">Tus clientes ya están en WhatsApp. ¿Por qué seguir perdiendo ventas?</h3>
-                <p class="footer-email">proyectos@codeus.com.mx</p>
+            <div class="footer-col footer-brand">
+                <div class="logo">
+                    <a href="#inicio">
+                        <img src="assets/logo_horizontal.png" alt="Codeus Logo" class="logo-img footer-logo">
+                    </a>
+                </div>
+                <p class="footer-tagline">Una solución para responder, clasificar y canalizar mejor las conversaciones de tu organización.</p>
+                <p class="footer-email">ventas@codeus.com.mx</p>
+                <p class="footer-address">Privada Santa Elena 1, Residencial Puente de México.<br>72150. Puebla de Zaragoza. México.</p>
             </div>
-
             <div class="footer-col">
                 <h3 class="footer-title">Redes Sociales</h3>
                 <ul class="footer-list">
@@ -166,31 +466,29 @@
                     <li><a href="#" class="social-link"><span class="icon">in</span> LinkedIn</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h3 class="footer-title">Legal</h3>
                 <ul class="footer-list">
                     <li><a href="politica-privacidad.html">Privacidad de datos</a></li>
-                    <li><a href="terminos-condiciones.html">Terminos y condiciones</a></li>
+                    <li><a href="terminos-condiciones.html">Términos y condiciones</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
-                <h3 class="footer-title">Enlaces</h3>
+                <h3 class="footer-title">Navegación</h3>
                 <ul class="footer-list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#problemas">Problemas</a></li>
-                <li><a href="#beneficios">Soluciones</a></li>
-                <li><a href="#planes">Planes</a></li>
-                <li><a href="#faqs">Preguntas</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#problemas">Problemática</a></li>
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#como-funciona">Cómo funciona</a></li>
+                    <li><a href="#paquetes">Paquetes</a></li>
+                    <li><a href="#sectores">Sectores</a></li>
+                    <li><a href="#faqs">Preguntas</a></li>
                 </ul>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <div class="container text-center">
-                <p>&copy; 2026 Codeus Solutions</p>
+                <p>&copy; 2026 Codeus Solutions — Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
